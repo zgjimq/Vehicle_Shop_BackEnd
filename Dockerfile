@@ -8,7 +8,7 @@ RUN mvn package -DskipTests
 
 FROM openjdk:17-jdk
 
-COPY --from=build /app/targer/Vehicle-back-end-ZgjiQer.0.0.1-SNAPSHOT.jar Vehicle-back-end-ZgjiQer.jar
+COPY --from=build /app/target/Vehicle-back-end-ZgjiQer.0.0.1-SNAPSHOT.jar Vehicle-back-end-ZgjiQer.jar
 
 EXPOSE 8080
 
